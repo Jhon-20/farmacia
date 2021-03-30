@@ -65,9 +65,9 @@ header nav .container_nav_search input:focus{
 }
 header nav .container_nav_search a{
     border-radius: 50%;
-     width: 50px;
-     height: 50px;
-     display: flex;
+    width: 50px;
+    height: 50px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: green;
@@ -94,3 +94,65 @@ header nav .container_nav_login a img, header nav .container_nav_login .truck im
     margin-bottom: -.2em;
 }
 
+@media(max-width:920px){
+    header nav .container_nav_logo{
+        width: 25%;
+        height: 100%;
+    }
+    header nav .container_nav_logo .logo{
+        width: 150px;
+        height: 100%;
+    }
+    header nav .container_nav_search{
+        width: 50%;
+    }
+    header nav .container_nav_login{
+        width: 25%;
+        justify-content: flex-end;
+    }
+    header nav .container_nav_login a img{
+        margin-left: 1em;
+    }
+    header nav .container_nav_login .txt_nav{
+        display: none;
+    }
+}
+
+@media(max-width:720px){
+    header{
+        padding: 20px 20px;
+    }
+    header nav .container_nav_logo{
+        width: 80%;
+    }
+    header nav .container_nav_search input{
+        display: none;
+    }
+    header nav .container_nav_search {
+        width: 10%;
+        justify-content: flex-end;
+    }
+    header nav .container_nav_search a{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: green;
+        margin-left: 0;
+    }
+    header nav .container_nav_login{
+        width: 10%;
+    }
+    header nav .container_nav_login .truck{
+     display: none;
+    }
+}
+
+@media(max-width:480px){
+    header nav .container_nav_search a{
+        width: 35px;
+        height: 35px;
+    }
+}
